@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Head-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Formular</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header" id="myHeader">
+
+        <logo class="logo">
+            <a href="index.html"> <img src="assets/logo.png"> </a>
+        </logo>
+
+        <nav class="nav">
+            <div class="navbar">
+                <a class="navigation" href="index.html">Home</a>
+                <a class="navigation" href="formu.html">Form</a>
+            </div>
+        </nav>
+    </header>
+    <!--Body-->
+    <!--https://pbs.twimg.com/media/E42lpSxWEActInO?format=jpg&name=4096x4096  - Bildquelle -->
+    <img class="picture" src="assets/azeru.png">
+    <div class="einleitung">
+        <div class="title">
+            <h2>Azeru Newsletter</h2>
+        </div>
+    </div class="quote">
+    <p class="quotes">Fill out the form to subscribe to Azeru.</p>
+    <div class="container">
+        <!--Form-->
+        <form id="form" class="form">
+            <div id="anrede" class="form-control">
+                <label for="anrede">Salutation:</label>
+                <select name="anrede" id="anrede">
+                    <option value="val3" selected>Mr.</option>
+                    <option value="val2">Ms.</option>
+                </select>
+                <small class="error hidden">Please fill out the form.</small>
+            </div>
+            <div class="form-control">
+                <label for="username">First and last name:</label>
+                <input type="text" id="username" placeholder="Enter your first and last name:" />
+                <small>Please fill out the form.</small>
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Enter email" />
+                <small>Please fill out the form.</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password" />
+                <small>Please fill out the form.</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="../script/script.js"></script>
+    <!--Footer-->
+    <footer id="formfooter">
+        <p class="footertext">Alessia Gauch / ME19d LB02</p>
+    </footer>
+</body>
+
+</html>
